@@ -1,631 +1,367 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap menu, fixed, after scrolling page, navbar, menu CSS examples" />
+<meta name="description" content="Bootstrap 5 fixed navbar on scroll page examples, Bootstrap 5" />  
+
+<title>  
+	Rahul Jain
+</title>
+<link rel ="icon" href ="rahul.jpg" type = "image/x-icon">
+<link rel="stylesheet"  href="home.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="home.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-</head>
-<body>
-
-
-
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#aboutme" >About Me</a>
-  <a href="#exp">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#myskils">Skills</a>
-  <a href="#mywork">My Work</a>
- 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars" ></i>
-  </a>
-</div>
-
-
-
-
-
-
-<style>
-  
-
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
-
-* {
-  box-sizing: border-box;
-  
-}
-
-.bg-image {
-  /* The image used */
-  background-image: url("img/mu1.jpg");
-  
-  /* Add the blur effect */
-  
-  
-  /* Full height */
-  height: 100%; 
- 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.block-content{
-  margin-top:23px;
-  padding: 150px;
-  padding-left: 76px;
-
-  
-  
-    color:white;
-   
-    background-image: url("img/mu1.jpg");
-    background-position: center;
-    
-  background-repeat: no-repeat;
-  background-size: cover;
-   
-  /* Add the blur effect */
- 
-  
-    
-}
-
-.block-content h2{
-  margin-top:-34px;
-  text-align:center;
-  
-
-}
-.block-content p{
-  margin-top:45px;
-}
-
-
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  max-width: 500px;
-  margin:-279px 0px 0px 683px;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center ;
-  
-}
-.block-content h1{
-  text-align: center;
-  margin-top: -3em;
-}
-.text{
-  margin-left:350px;
-}
-.te{
-  padding-left:350px;
-}
-.te{
-  padding-left:350px;
-}
-.text1{
-  padding-bottom: 2px;
-  padding-left:350px;
- 
-}
-.header {
-  
-  padding: 10px;
-  padding-left:75px;
-  text-align: center;
-  width:fit-content;
-  color: white;
-  border:2px solid wheat;
- 
-  z-index: 2;
-}
-.header1{
-  padding: 10px;
-  padding-left:18px;
-  text-align: center;
-  width:fit-content;
-  color: white;
-  border:2px solid wheat;
-  
-  z-index: 2;
-}
-
-.name{
-  text-align: center;
-}
-.skills{
-  height:81px;
-  padding-left: 300px;
- 
-}
-.tool{
-  
-height:50px;
-width:150px;
-float:left;
-margin-left:10px;
-  max-width: 20%;
-  max-height: 20%;
-}
-#tools{
-  margin-left:238px;
-}
-.my_card_css {
-            background-color: #00FFFF;
-            background-color: rgb(11, 10, 12);
-            opacity: 1.0;
-            float: left;
-            margin: 48px 213px 37px 12px;
-    padding: 0px 0px 0px 0px;
-        }
-
-.my_card_css1 {
-            background-color: #00FFFF;
-            background-color: rgb(11, 10, 12);
-            margin:28px 0px 0px 2px;
-            padding:1px 0px 1px 0px;
-           
-        }     
-
-
-
-@media screen and (max-width:800px) {
-  .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
- margin:-233px 0px 0px 243px;
- transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center ;
-}
-.sym{
-      height: 34px;
-      width:34px;
-     margin-left:35px;
-   
-    }
-
-
-}
-@media screen and (max-width:1240px) and (min-width:800px){
- .bg-text{
- margin:-283px 0px 0px 553px;
-}
- .my_card_css{
-  margin: 51px 60px 19px 160px;
-            padding-bottom:12px;
-            margin-bottom:29px;
-          
-            
-
-        }
-
-.sym{
-      height: 34px;
-      width:34px;
-     
-     margin-left:15px;
-     
-    }
-}
-
-.card-img-top{
-  height:172px;
-  width:336px;
-}
-@media screen and (min-width:10px) and (max-width: 1266px){
-  .side{
-    
-
-    margin-left: -360px;
-  }
-  .header1{
-    width:374px;
-  }
-  .box {
-    border: 2px solid white;
-    height: 67;
-    width: fit-content;
-    margin-left: -68px;
-    padding-right: 2px;
-}
-
-.skills {
-    height: 81px;
-    margin-left: -352px;
-    max-width: 287%;
-}
-#tools{
-
-
- padding:0px 0px 0px 0px;
- margin:5px 29px 0px 0px;
-  }
-.tool{
- height:31px;
- max-width: fit-content;
- padding:0px 0px 0px 0px;
- margin:5px 29px 0px 0px;
-} 
-.tm{
-width:106px;
-  padding:0px 0px 0px 0px;
-  margin: -31px 49px 0px 228px;
-} 
-.tk{
-  width: 109px;
-    padding: 0px 0px 0px 0px;
-    margin: -29px 29px 11px 224px;
-}
-.tg{
-  width:101px;
-  padding:0px 0px 0px 0px;
-  margin: 41px 105px -3px 24px
-}
- 
-
-
-
-}
-
-.footer-copyright{
-    background-color: rgb(122, 120, 120);
-    height:45px;
-    text-align: center;
-    padding-top:15px;
-
-}
-.footer-copyright a{
-
-    color:white;
-  
-}
-
-
-span::before {
-            content: "Coder";
-            animation: animate infinite 10s;
-            padding-left: 10px;
-        }
-  
-        @keyframes animate {
-  
-            0% {
-                content: "Enthusiast";
-            }
-  
-            20% {
-                content: "Indian";
-            }
-  
-            55% {
-                content: "python";
-            }
-        }
-        .fa-facebook{
-  padding: 10px;
-  font-size: 28px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-google{
-  padding: 10px;
-  font-size: 28px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-instagram{
-  padding: 10px;
-  font-size: 28px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-linkedin{
-  padding: 10px;
-  font-size: 28px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-medium{
-  padding: 10px;
-  font-size: 28px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa-twitter{
-  padding: 10px;
-  font-size: 28px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
- 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #be2691;
-  color: white;
-}
-
-.fa-medium{
-  background: #0e0d0d;
-  color: white;
-}
-#aboutme{
-  margin-top:-90px;
-}
-
-</style>
-</head>
-<body>
-
-<div class="bg-image"></div>
-
-<div class="bg-text" id="home">
-  <img src="img/rahul.jpg" class="rahul" alt="descriptive text">
-  <h2>RAHUL RAJKUMAR JAIN</h2>
- <Button class="resume"> <a class="mm" href="https://resume.io/r/ni5jUEGCx"  target="_blank"style="font-size:19px"><h3  style=margin-top:8px>RESUME</h1></a> </Button>
-  <p><span></span> </p>
-  <a href="https://www.facebook.com/profile.php?id=100013488973413" target= "_blank"   class="fa fa-facebook"></a>
-  <a href="https://twitter.com/RahulJa93421463" class="fa fa-twitter"></a>
-  <a href="https://mail.google.com/"   target= "_blank"class="fa fa-google"></a>
-  <a href="https://www.linkedin.com/in/rahul-jain-85063119b/" target= "_blank" class="fa fa-linkedin"></a>
-  <a href="https://www.instagram.com/p/CN44v9RjDvAI7gvUceEotE3gdMrbEplbHnLDGY0/"  target= "_blank" class="fa fa-instagram"></a>
-
-  <a href="https://medium.com/@rahuljain0718"  target= "_blank" class="fa fa-medium"></a>
- 
-</div>
-
-
-
-<div class="block-content" id=aboutme>
-  
-  <h2>About Me</h2>
-  <h2>___________________</h2>
-  <a>I am Self motivated and eager to learn new things.My goal is to grow professionally and contribute to your esteemed organization and learn more.<br>I'm 20 year old Information Technology Engineering student living in Pune.<br>I am pursuing my Engineering from D Y Patil College of Engineering,pune.I am self taught developer and make website.I am always energetic.<br>i like playing Skating and chess.I can work under pressureI am flexible in my working hours, being able to work evenings and weekends.I am a dependable person who is great at time management.I am motivated.I am a talented, ambitious and hardworking individual, with broad skills.A key strength is communication; building strong relationships with people in order to deliver the best results.</a>
-    
-</div>
-
-
-<div class="block-content" id="exp">
-  
-  <h2 text-align:center>My Experience</h2>
-  <h2>_________________</h2>
-  <div class="box">
-    <p class="text">
-      05/2020-02/2021
-    <h4 class="te">Trainee at</h4>
-     <h3 class="te">Zenser Technology</h3>
-    <h5 class="text1">Pune,Maharshtra</h5>
-    <img src="img/zz.png" class="sym1">
-  </div>
- 
- 
-
-    
-</div>
-<div class="block-content" id="education">
-  <h1>My Education</h1>
-  <h2>__________________________</h2>
-  <div class="side">
-<div class="header">
-  
-  <a style=margin-left:-62px class="text1"><h4 style=margin-left:-62px>2018 - 2022</h4>
-    <h3 style=margin-left:-62px>D. Y. Patil College of Engineering, Pune</h3>
-   <h4 style=margin-left:-62px> Pune, Maharashtra</h4>
-    Bachelor of Engineering in Information Technology</a>
-
-   
-</div>
-
-<div class="header1">
-  
-  <a><h4>2015 - 2016</h4>
-    <h3 >Walchand College of Arts and Science,Solapur</h3>
-   <h4> solapur, Maharashtra</h4>HSC in Science</a>
-</div>
-</div>
-</div>
-
-
-<div class="block-content" id="myskils">
-  <h1>My Skills</h1>
-  <h2>___________________</h2>
-  <br><br>
-  <h3 class="name">Languages:</h3>
-  <br>
-  
-  <img src="img/ss.jpg" class="skills">
-<br><br>
-  <h3 class="name">Tools:</h3>
-  <br>
-  <img src="img/xamp.png" class="tool" id="tools">
-  <img src="img/eclipse.jpg" class="tool tm" >
-  <img src="img/mysql.png" class="tool tg">
-  <img src="img/pyCharm.png" class="tool tk">
- 
-</div>
-
-
-
-<div class="block-content" id="mywork">
-  <div class="project">
-  <h1>My Work</h1>
-  <div class="row pt-4">
-    <div class="col-md-6">
-      <h3>My Project</h3>
-        <div class="card my_card_css" style="width: 21rem;">
-            <img src="img/blod.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <center>
-            <h3 class="card-title text-center" style=color:red>Blood Bank System</h3>
-            <h5 style=color:blue>      Blood bank system helps for people who want blood or who
-              wants to donate blood. it simply gets the information of user
-              and it will generate name of hospital where you can donate
-              blood and get blood.</h5>
-          </center>
-        </div>
-      </div>
-      </div>
-      <div class="col-md-6">
-      <div class="card my_card_css" style="width: 21rem;">
-        <img src="img/port.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <center>
-        <h3 class="card-title text-center" style=color:red>Portfolio</h3>
-        <h5 style=color:blue> Developed a portfolio to showcase the ,About me skills,
-          Activities .It is mobile friendly website.easily accessible and
-          also it shows my social media platforms.</h5>
-      </center>
-    </div>
-  </div>
-  </div>
-
- 
-
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="myarticle">
-
-  <div class="row pt-4">
-    <div class="col-md-6">  
-  <h3>My Article</h3> 
-            <div class="card my_card_css1" style="width: 21rem;">
-              <img src="img/pyth.jfif" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h3 class="card-title text-center" style=color:red>Beginners guide to programming code with Python</h3>
-              </div>
-
-        
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<footer>
-<div class="footer-copyright text-center py-3">© 2021 Copyright:
-  <a href="#"> Rahul Jain</a>
-</div>
-</footer>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		window.addEventListener('scroll', function() {
+	       
+			if (window.scrollY > 50) {
+				document.getElementById('navbar_top').classList.add('fixed-top');
+				// add padding top to show content behind navbar
+				navbar_height = document.querySelector('.navbar').offsetHeight;
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+			 	document.getElementById('navbar_top').classList.remove('fixed-top');
+				 // remove padding top from body
+				document.body.style.paddingTop = '0';
+			} 
+		});
+	}); 
+	// DOMContentLoaded  end
 </script>
 
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+</head>
+<body>
 
-</html>
+
+
+<!-- ============= COMPONENT ============== -->
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container">
+ 	 <a class="navbar-brand" href="#">Rahul Jain</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+	
+
+	<ul class="navbar-nav ms-auto">
+		<li class="nav-item"><a class="nav-link" href="#home"> Home </a></li>
+		<li class="nav-item"><a class="nav-link" href="#about"> About Me </a></li>
+		<li class="nav-item"><a class="nav-link" href="#exp"> Experience </a></li>
+		<li class="nav-item"><a class="nav-link" href="#edu"> Education </a></li>
+		<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+		<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+		<li class="nav-item"><a class="nav-link" href="#work"> My Work </a></li>
+		<li class="nav-item"><a class="nav-link" href="#contact"> Contact Me </a></li>
+	</ul>
+
+  </div> <!-- navbar-collapse.// -->
+ </div> <!-- container-fluid.// -->
+</nav>
+<!-- ============= COMPONENT END// ============== -->
+
+
+
+
+<div class="intro" id="home">
+	<br>
+
+
+<img src="rahul.jpg" class="rahul" >
+<br>
+<h3 class="center"  style="color: cornsilk;" style="text-align:center">RAHUL RAJKUMAR JAIN</h3>
+<br>
+<div class="center">
+
+	
+	 <a href="https://resume.io/r/ni5jUEGCx" target="_blank" style="color: aliceblue;"class="btn btn-info" role="button">Resume</a>
+		<br>
+
+		
+</div>
+<br>
+<a href="https://www.facebook.com/profile.php?id=100013488973413" target= "_blank"   class="fa fa-facebook"></a>
+<a href="https://twitter.com/RahulJa93421463" class="fa fa-twitter"></a>
+<a href="https://mail.google.com/"   target= "_blank"class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/rahul-jain-85063119b/" target= "_blank" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/p/CN44v9RjDvAI7gvUceEotE3gdMrbEplbHnLDGY0/"  target= "_blank" class="fa fa-instagram"></a>
+
+<a href="https://medium.com/@rahuljain0718"  target= "_blank" class="fa fa-medium"></a>
+
+<br>
+
+</div>
+
+
+<br>
+<br><br><br><br>
+
+<hr class="solid">
+
+<div class="aboutme" id="about" style="color: cornsilk;">
+
+	<br><br><br>
+	<h2 style="text-align: center;">About Me</h2>
+	<h3 style="text-align: center;">-------------------------</h3>
+	
+	  
+  <p style=font-size:1em>I am Self motivated and eager to learn new things.My goal is to grow professionally and contribute to your esteemed organization and learn more.I'm 20 year old Information Technology Engineering student living in Pune.I am pursuing my Engineering from D Y Patil College of Engineering,pune.I am self taught developer and make website.I am always energetic.i like playing Skating and chess.I can work under pressureI am flexible in my working hours, being able to work evenings and weekends.I am a dependable person who is great at time management.I am motivated.I am a talented, ambitious and hardworking individual, with broad skills.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr class="solid">
+<br><br>
+<br>
+<div class="Experience" id="exp" style="color: cornsilk;">
+
+<h2 style="text-align: center;">My Experience</h2>
+<h3 style="text-align: center;">-------------------------</h3>
+<div class="box1">
+
+		<img src="zz.png" alt="placeholder image" class="img-fluid" />
+	 <br>
+	 <br>
+	 <text style="text-align: center;">
+<p> 05/2020-02/2021<h4 style="color: rgb(16, 214, 221);">Trainee at</h4>
+<p>Zenser Technology<br>Pune, Maharshtra</p>
+</p>
+
+</text>
+</div>
+
+</div>
+
+
+
+<br>
+<br>
+<br>
+
+
+<hr class="solid">
+
+<br>
+<br>
+<br>
+<div class="education" id="edu" style="color: cornsilk;">
+	<h2 style="text-align: center;">My Education</h2>
+	<h3 style="text-align: center;">-------------------------</h3>
+	<div class="box">
+		<a><h4 style="text-align: center;">2018 - 2022</h4>
+			<h3 style="text-align: center;">D. Y. Patil College of Engineering, Pune</h3>
+		   <h4 style="text-align: center;" > Pune, Maharashtra</h4>
+			<p  style="text-align: center;">Bachelor of Engineering in Information Technology</p></a>
+			<hr class="solid">
+
+			<a><h4 style="text-align: center;">2015 - 2016</h4>
+				<h3 style="text-align: center;">Walchand College of Arts and Science,Solapur</h3>
+			   <h4 style="text-align: center;"> solapur, Maharashtra</h4>
+			   <p style="text-align: center;">HSC in Science</p></a>		
+	</div>
+
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+<hr class="solid">
+
+<br>
+<br>
+<br>
+
+<div class="myskills" id="skills" style="color: cornsilk;">
+	<h2 style="text-align: center;">My Skills</h2>
+	<h3 style="text-align: center;">-------------------------</h3>
+	<br>
+	<br>
+	<h2  style="text-align: center;"> Langauges</h2>
+<br>
+<br>
+<div class="center">
+<img src="java.png"  class="center logo" />
+
+<img src="python.png"  class="center logo"/>
+<img src="html-5.png"  class="center logo"/>
+<img src="css-3.png"  class="center logo"/>
+<img src="php.png"  class="center logo"/>
+</div>
+
+<br>
+
+<br>
+<h2  style="text-align: center;">Tools</h2>
+<div class="center">
+	<img src="visual-studio.png" class="center logo"/>
+
+	<img src="eclipse.png" class="center logo"/>
+	<img src="pycharm.png" class="center logo"/>
+	<img src="mysql.png" class="center logo"/>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+</div>
+<hr class="solid">
+<br>
+<br>
+<br>
+<div class="certifications" id="certifications">
+<h2 style="text-align: center; color: rgb(190, 155, 108);">Certifications</h2>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/18wltlScJdjUxEe4O9TwBtyIbGiHC8mJw/view?usp=sharing"target= "_blank" style="text-align: center;  color:white"><h3>Crash Course on Python </h3></a>
+<br>
+<a href="https://drive.google.com/file/d/1lpNJyZWV-qDCyAewKzH6PfNQFT2FsWJx/view?usp=sharing" target= "_blank"style="text-align: center; color:white"><h3>Learn Java</h3></a>
+<br>
+<a href="https://drive.google.com/file/d/17BEv1It70E59mqobWJgLtSZulsdXkDqG/view?usp=sharing" target= "_blank"style="text-align: center; color:white"><h3>AI For Everyone</h3></a>
+<br>
+<a href="https://drive.google.com/file/d/1wRAbg__e3Kh-2uaGMm9D_rYCNc0xys_D/view?usp=sharing" target= "_blank"style="text-align: center; color:white"><h3>National Engineering Olympiad</h3></a>
+
+<br>
+<a href="https://drive.google.com/file/d/1hDQ42Cetwh8QeoJvp1v-SoxXVj_gNee2/view?usp=sharing" target= "_blank"style="text-align: center; color:white"><h3>Using Python to interact with operating system</h3></a>
+
+<br>
+
+<a href="https://drive.google.com/file/d/16Te4nWVBdiXhZ1tzMi3RHaaa7FD7BPt8/view?usp=sharing" target= "_blank"style="text-align: center; color:white"><h3>Code-Mania event</h3></a>
+
+<br>
+<a href="https://drive.google.com/file/d/1hh3Dz9PTd6pi7yTM9CuMWCWFFzlYSfdt/view?usp=sharing" target= "_blank"style="text-align: center; color:white"><h3>Workshop on Data science Using python</h3></a>
+</div>
+
+
+
+<br>
+<br>
+<br>
+
+
+<hr class="solid">
+
+<br><br><br>
+
+<div class="mywork" id="work"style="color:bisque">
+
+<h2 style="text-align: center;">My Work</h2>
+<br>
+<br>
+<br>
+<h3 style="text-align: center;">My Project</h3>
+<br>
+<br>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 py-3 py-sm-0">
+			<div class="card" style="width: 18rem;" >
+				<img src="blod.png" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Blood bank System</h5>
+				  <p class="card-text">Aug, 2020 - Nov, 2020<br>____________________________________<br><br> Blood bank system helps for people who want blood or who
+					wants to donate blood. it simply gets the information of user
+					and it will generate name of hospital where you can donate
+					blood and get blood.
+					Pune, Maharashtra</p>
+				  
+				</div>
+			  </div>
+        </div>
+
+		<div class="col-sm-4 py-3 py-sm-0">
+			<div class="card" style="width: 18rem; background-color:rgb(77, 35, 175) !important">
+				<img src="port.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Portfolio</h5>
+				  <p class="card-text">Mar, 2021 - April, 2020<br>____________________________________<br><br>      Developed a portfolio to showcase the ,About me skills,
+					Activities .It is mobile friendly website.easily accessible and
+					also it shows my social media platforms.</p>
+<br>
+
+				</div>
+			  </div>
+        </div>
+</div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<h3 style="text-align: center;">My Article</h3>
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 py-3 py-sm-0">
+			<div class="card" style="width: 18rem;  background-color: rgb(121, 36, 57) !important;">
+				<img src="pyth.jfif" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Beginners guide to programming code with Python</h5>
+				  <p class="card-text">jul, 2020 - jul, 2020<br>____________________________________<br><br> In  guide, learned about the python programming language, why we should learn python, How to start learning python and some sources to learn python. </p>
+				  
+				</div>
+			  </div>
+        </div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<hr class="solid">
+
+<br>
+<br>
+<br>
+<div id="contact">
+<h2 style="text-align: center;">Contact Me</h2>
+
+<br>
+<br>
+<h3 style="color: rgb(0, 195, 255); text-align: center;">+91-9112456509</h3>
+<br>
+
+<h3 style="color: rgb(0, 195, 255); text-align: center;">Pune, Maharashtra, India.</h3>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer>
+	<div class="footer-copyright text-center py-3">© 2021 Copyright:
+	  <a href="#"> Rahul Jain</a>
+	</div>
+	</footer>
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+ </html>
